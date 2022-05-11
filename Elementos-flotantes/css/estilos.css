@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+.header a{
+    display: inline-block;
+    vertical-align: 2em;
+    margin-left: 1em;
+    text-decoration: none;
+    color: white;
+}
+.header h1{
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.header img{
+    width: 100px;
+    display: inline-block;
+    margin-left: 2em;
+    border-radius: 30px;
+}
+.menu{
+    position: absolute;
+    top:50px;
+    right: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;    
+}
+.menu .menu-item li{
+    display: inline-block;   
+}
+ .menu-item .menu-link{
+     padding: 10px 15px;  
+     text-decoration: none; 
+     border-radius: 5px;  
+     margin: 0px;   
+}
+.menu-item .menu-link:hover{    
+    background-color: rgb(94, 94, 180);    
+    -webkit-transition: all;   
+    transition: 1s; 
+}
+.contenedor{
+    max-width: 80%;   
+    margin: 20px auto;   
+}
+.header{
+    background-color: rgb(30, 30, 155);
+   /* text-align: center;*/
+    color: white;
+    padding:20px 0px;
+    position: relative;
+}
+.main{
+    width: 68%;
+    background-image: url('/img/fondo-emp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    vertical-align:top;
+    padding-bottom: 20px;
+    margin-right: 15px;
+}
+.main .content-sec{
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px; 
+    overflow: hidden;   
+   }
+   .main .content-sec:hover{
+    overflow-y: scroll;
+   }
+.article{
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.5);   
+    margin: 10px auto;
+    padding: 10px;   
+    color: brown;
+}
+.article h2{
+    text-align: center;
+    background-color: #ccc;
+}
+.article:hover{
+    box-shadow: -1px -1px 3px 10px royalblue;
+    background-color: #fff; 
+    border: none;
+    border-radius: 50px;
+    transition: 2s;
+}
+.img-art{
+  width: 100%;
+}
+.content-sec .article-sec{
+    width: 48.5%;    
+    /*display: inline-block; */
+    margin-left: 5px; 
+    box-shadow: none; 
+    background-color: #fff; 
+    border: 2px solid brown;
+}
+.content-sec .article-sec img{
+ width: 100%;
+}
+.content-sec .article-sec  p{
+   color: green;
+}
+.content-sec .article-sec h2{
+    text-align: start;
+    padding: 0 5px;
+}
+.aside{
+    width: 30%;
+    height:685px;
+    background-color: blueviolet;
+    border: 3px solid rgb(224, 16, 16);
+    display: inline-block;
+    margin-top: 5px;    
+    padding: 10px; 
+    overflow-y: scroll;  
+}
+.aside p{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 20px;
+    color: brown;
+}
+.aside h2{
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+.aside .wiguet img{
+    width: 100px;
+   float: right;
+   margin: 5px;
+   border-radius: 10px;
+ }
+.aside .wiguet p{
+    width: 100%;
+    color: blue;
+}
+.aside .wiguet-2 img{
+    width: 120px;
+    float:left;
+    margin: 5px;
+    border-radius: 10px;
+}
+.aside .wiguet-2 p{
+    width: 100%; 
+    color: blue;  
+}
+.form{
+    margin-bottom: 10px;
+}
+legend{
+    color: yellowgreen;
+    font-size: 12;
+    font-weight: bold;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:20px 0px;
+}
+.footer h2{
+    font-size: 20px;
+}
+@media (max-width: 1200px){
+    .main{
+        width: 100%;
+        }
+    .aside{
+        width: 100%;       
+         }
+    .article-sec{
+        width: 100%;
+         }
+    .footer{
+        margin-top: 10px;
+         }
+    .menu{
+        top: 100px;
+        left: 6em;
+        }
+    .menu-item .menu-link{
+        padding: 5px 10px; 
+        font-weight: normal;
+        font-size: 14px;        
+         }
+}
+@media (max-width: 635px){
+    .header{
+        padding: 10px 0px;
+        text-align: center;
+           }
+    .header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+          }
+    .header h1{
+        font-size: 2.5em;
+         }
+    .menu{
+        top: 160px;
+        left: 0px;
+        margin-left: 5px 
+         }
+    .menu-item .menu-link{
+        padding: 5px ; 
+        font-weight: normal;
+        font-size: 14px;        
+        }
+    .menu .menu-item{
+        padding-left: 5px;    
+        }
+     .content-sec .article-sec{
+        width: 100%;
+        }
+}
